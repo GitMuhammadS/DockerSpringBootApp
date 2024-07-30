@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/actor-api")
 public class DockerRestController {
 	
-	//localhost:8080/actor-api/wish/shahbaz
 	
+	//http://localhost:4041/actor-api/wish/shahbazzz
 	@GetMapping("/wish/{name}")
 	public ResponseEntity<String> showWishMessage(@PathVariable String name){
 		return new ResponseEntity<String>("Good morning::"+name,HttpStatus.OK);
